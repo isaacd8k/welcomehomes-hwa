@@ -8,9 +8,9 @@ type Props = {
 
 export default function Step({ icon, title, desc }: Props) {
   return (
-    <div>
+    <div className="">
       {/* ICON */}
-      <header>{title}</header>
+      <header className="my-2">{title}</header>
       <p>{desc}</p>
     </div>
   );
