@@ -1,10 +1,12 @@
 import React from "react";
+import MainHeading from "../utils/MainHeading";
+import MainSection from "../utils/MainSection";
 import Step from "./Step";
 
 export default function StepByStep() {
   return (
-    <section>
-      <header>How it works</header>
+    <MainSection className="bg-stone-900 text-slate-200">
+      <MainHeading>How it works</MainHeading>
 
       <Step
         icon={<></>}
@@ -30,6 +32,6 @@ export default function StepByStep() {
         you secure a construction loan that will cover your whole project and 
         transitions to a permanent mortgage when your house is ready."
       />
-    </section>
+    </MainSection>
   );
 }
