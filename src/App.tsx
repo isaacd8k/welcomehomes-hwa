@@ -7,7 +7,7 @@ import MoreInfo from "./components/MoreInfo";
 
 function App() {
   return (
-    <div className="App">
+    <div className="max-w-4xl mx-auto">
       <Hero />
       <StepByStep />
       <Locations />
