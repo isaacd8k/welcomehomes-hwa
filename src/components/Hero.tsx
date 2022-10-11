@@ -7,7 +7,7 @@ import SingleImageCarousel from "./utils/SingleImageCarousel";
 
 export default function Hero() {
   return (
-    <MainSection>
+    <MainSection className="py-8">
       <div className="grid grid-cols-8 gap-2">
         <div className="col-span-3 flex flex-col justify-evenly">
           <MainHeading>We make building a new home possible</MainHeading>
