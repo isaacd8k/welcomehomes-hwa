@@ -9,7 +9,9 @@ type Props = {
 export default function Button({ children, className, main = false }: Props) {
   return (
     <button
-      className={`border px-6 rounded ${main && "bg-sky-600"} ${className}`}
+      className={`border border-sky-600 px-6 py-2 text-xs rounded ${
+        main && "bg-sky-600 text-slate-50"
+      } ${className}`}
     >
       {children}
     </button>
