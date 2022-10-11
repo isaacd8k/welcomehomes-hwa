@@ -1,5 +1,5 @@
 import React from "react";
-import MainHeading from "../utils/MainHeading";
+import BoldHeadline from "../utils/BoldHeadline";
 import MainSection from "../utils/MainSection";
 import Step from "./Step";
 import StepGroup from "./StepGroup";
@@ -7,7 +7,7 @@ import StepGroup from "./StepGroup";
 export default function StepByStep() {
   return (
     <MainSection className="bg-stone-900 text-slate-200">
-      <MainHeading>How it works</MainHeading>
+      <BoldHeadline className="text-slate-50">How it works</BoldHeadline>
 
       <StepGroup>
         <Step
