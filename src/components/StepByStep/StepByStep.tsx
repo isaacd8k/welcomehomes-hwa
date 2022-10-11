@@ -3,15 +3,20 @@ import BoldHeadline from "../utils/BoldHeadline";
 import MainSection from "../utils/MainSection";
 import Step from "./Step";
 import StepGroup from "./StepGroup";
+import {
+  EditSharp,
+  LocationOnSharp,
+  ReceiptLongSharp,
+} from "@mui/icons-material";
 
 export default function StepByStep() {
   return (
-    <MainSection className="bg-stone-900 text-slate-200">
+    <MainSection className="bg-stone-800 text-slate-200 grid grid-rows-[1fr] gap-6">
       <BoldHeadline className="text-slate-50">How it works</BoldHeadline>
 
       <StepGroup>
         <Step
-          icon={<></>}
+          icon={<EditSharp fontSize="small" />}
           title="Select & Customize"
           desc="Our architects & designers have developed beautiful transitional 
         homes in 3, 4 and 5 bedroom options with more on the way! The designs 
@@ -20,7 +25,7 @@ export default function StepByStep() {
         />
 
         <Step
-          icon={<></>}
+          icon={<LocationOnSharp fontSize="small" />}
           title="Choose the best location"
           desc="We operate in 703 towns with more towns being added every week. 
         Our team reviews every available parcel in the towns we cover and offer 
@@ -28,7 +33,7 @@ export default function StepByStep() {
         />
 
         <Step
-          icon={<></>}
+          icon={<ReceiptLongSharp fontSize="small" />}
           title="Financing & Closing"
           desc="Financing is simple with Welcome's banking partners, who can help
         you secure a construction loan that will cover your whole project and 

@@ -9,9 +9,11 @@ type Props = {
 export default function Step({ icon, title, desc }: Props) {
   return (
     <div className="">
-      {/* ICON */}
-      <header className="my-2">{title}</header>
-      <p>{desc}</p>
+      <div className="py-2">
+        <span className="bg-black rounded-full p-2">{icon}</span>
+      </div>
+      <header className="my-2 font-medium">{title}</header>
+      <p className="text-xs">{desc}</p>
     </div>
   );
 }
