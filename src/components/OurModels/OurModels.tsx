@@ -1,7 +1,7 @@
 import React from "react";
-import BoldHeadline from "./utils/BoldHeadline";
-import MainSection from "./utils/MainSection";
-import SecSubheading from "./utils/SecSubheading";
+import BoldHeadline from "../utils/BoldHeadline";
+import MainSection from "../utils/MainSection";
+import SecSubheading from "../utils/SecSubheading";
 
 export default function OurModels() {
   return (
