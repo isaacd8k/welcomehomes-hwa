@@ -2,6 +2,8 @@ import React from "react";
 import BoldHeadline from "../utils/BoldHeadline";
 import MainSection from "../utils/MainSection";
 import SecSubheading from "../utils/SecSubheading";
+import TabbedModelViewer from "./components/TabbedModelViewer";
+import HomeModels from "../../mock_data/housemodels";
 
 export default function OurModels() {
   return (
@@ -11,7 +13,7 @@ export default function OurModels() {
         Compare our models to find the perfect home for you, customized to your
         liking.
       </SecSubheading>
-      <div className="bg-yellow-100">Tabbed model viewer</div>
+      <TabbedModelViewer models={HomeModels} />
     </MainSection>
   );
 }
