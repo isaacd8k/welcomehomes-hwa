@@ -9,7 +9,6 @@ type Props = {
 
 const variants = {
   enter: (direction: React.MutableRefObject<number>) => {
-    console.log("entering with direction: ", direction.current);
     return {
       x: direction.current > 0 ? 800 : -800,
       opacity: 0,
@@ -23,7 +22,6 @@ const variants = {
     transition: { duration: 0.4 },
   },
   exit: (direction: React.MutableRefObject<number>) => {
-    console.log("exiting with direction: ", direction.current);
     return {
       x: direction.current < 0 ? 800 : -800,
       opacity: 0,
