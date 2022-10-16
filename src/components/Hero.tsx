@@ -1,15 +1,20 @@
 import React from "react";
 import Button from "./utils/Button";
 import ButtonGroup from "./utils/ButtonGroup";
+import Carousel, { CarouselItem } from "./utils/Carousel";
 import MainHeading from "./utils/MainHeading";
 import MainSection from "./utils/MainSection";
-import SingleImageCarousel from "./utils/SingleImageCarousel";
+
+import carouselImg1 from "./../mock_data/img/carousel-1.jpeg";
+import carouselImg2 from "./../mock_data/img/carousel-2.jpeg";
+import carouselImg3 from "./../mock_data/img/carousel-3.jpeg";
+import carouselImg4 from "./../mock_data/img/carousel-4.jpeg";
 
 export default function Hero() {
   return (
-    <MainSection className="py-8">
+    <MainSection className="">
       <div className="grid grid-cols-8 gap-2">
-        <div className="col-span-3 flex flex-col justify-evenly">
+        <div className="col-span-3 flex flex-col justify-evenly space-y-6">
           <MainHeading>We make building a new home possible</MainHeading>
           <p className="text-sm">
             A new home is so much better than a used one. Welcome makes the
@@ -23,8 +28,27 @@ export default function Hero() {
           </ButtonGroup>
         </div>
 
-        <div className="col-span-5">
-          <SingleImageCarousel />
+        <div className="col-span-5 flex flex-col justify-center">
+          <div className="aspect-[3/2] rounded-2xl overflow-hidden">
+            <Carousel>
+              <CarouselItem
+                className="bg-cover"
+                style={{ backgroundImage: `url(${carouselImg1})` }}
+              />
+              <CarouselItem
+                className="bg-cover"
+                style={{ backgroundImage: `url(${carouselImg2})` }}
+              />
+              <CarouselItem
+                className="bg-cover"
+                style={{ backgroundImage: `url(${carouselImg3})` }}
+              />
+              <CarouselItem
+                className="bg-cover"
+                style={{ backgroundImage: `url(${carouselImg4})` }}
+              />
+            </Carousel>
+          </div>
         </div>
       </div>
     </MainSection>
