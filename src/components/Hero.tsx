@@ -13,16 +13,18 @@ import carouselImg4 from "./../mock_data/img/carousel-4.jpeg";
 export default function Hero() {
   return (
     <MainSection className="">
-      <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
+      <div className="grid grid-cols-4 md:grid-cols-8 gap-y-4 sm:gap-4">
         <div className="col-span-4 md:col-span-3 flex flex-col justify-center md:pr-5">
-          <MainHeading>We make building a new home possible</MainHeading>
-          <p className="text-sm py-4">
+          <MainHeading className="text-center sm:text-left">
+            We make building a new home possible
+          </MainHeading>
+          <p className="text-sm text-center sm:text-left py-4">
             A new home is so much better than a used one. Welcome makes the
             process of building a home super-simple. We handle everything at a
             guaranteed, all-in-one price.
           </p>
 
-          <ButtonGroup className="flex-col space-y-2 sm:space-y-0 sm:flex-row sm:space-x-2">
+          <ButtonGroup className="flex-col justify-center sm:justify-start space-y-2 sm:space-y-0 sm:flex-row sm:space-x-2">
             <Button main>Our models</Button>
             <Button>Explore towns</Button>
           </ButtonGroup>
