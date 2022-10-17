@@ -2,8 +2,9 @@ import React from "react";
 
 type Props = {
   children: React.ReactNode;
+  className?: string;
 };
 
-export default function ButtonGroup({ children }: Props) {
-  return <div className="flex space-x-2">{children}</div>;
+export default function ButtonGroup({ children, className }: Props) {
+  return <div className={`flex ${className}`}>{children}</div>;
 }

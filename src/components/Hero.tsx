@@ -13,8 +13,8 @@ import carouselImg4 from "./../mock_data/img/carousel-4.jpeg";
 export default function Hero() {
   return (
     <MainSection className="">
-      <div className="grid grid-cols-8 gap-4">
-        <div className="col-span-3 flex flex-col justify-center pr-5">
+      <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
+        <div className="col-span-4 md:col-span-3 flex flex-col justify-center md:pr-5">
           <MainHeading>We make building a new home possible</MainHeading>
           <p className="text-sm py-4">
             A new home is so much better than a used one. Welcome makes the
@@ -22,7 +22,7 @@ export default function Hero() {
             guaranteed, all-in-one price.
           </p>
 
-          <ButtonGroup>
+          <ButtonGroup className="flex-col space-y-2 sm:space-y-0 sm:flex-row sm:space-x-2">
             <Button main>Our models</Button>
             <Button>Explore towns</Button>
           </ButtonGroup>
