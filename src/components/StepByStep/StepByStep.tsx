@@ -13,7 +13,7 @@ export default function StepByStep() {
   return (
     <MainSection className="bg-stone-800 text-slate-200 grid grid-rows-[1fr] gap-6">
       <BoldHeadline
-        className="text-slate-50"
+        className="text-slate-50 text-center sm:text-left"
         topBarClassName="before:bg-stone-600"
       >
         How it works

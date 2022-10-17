@@ -5,5 +5,7 @@ type Props = {
 };
 
 export default function StepGroup({ children }: Props) {
-  return <div className="grid grid-cols-3 gap-5">{children}</div>;
+  return (
+    <div className="grid md:grid-cols-3 gap-5 px-3 sm:px-0">{children}</div>
+  );
 }
