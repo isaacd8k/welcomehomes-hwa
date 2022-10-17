@@ -30,13 +30,15 @@ export default function Carousel({ children }: { children: React.ReactNode }) {
     <div className="overflow-hidden h-full relative">
       {/* Buttons */}
       <button
-        className="px-2 py-1 bg-slate-100/80 rounded-full absolute left-2 top-[46%] z-10"
+        className={`px-2 py-1 bg-slate-100/80 rounded-full 
+        absolute left-2 top-[46%] z-10 transition-colors hover:bg-slate-100/100`}
         onClick={() => goToPrevSlide()}
       >
         <ArrowBackIosSharp fontSize="inherit" />
       </button>
       <button
-        className="px-2 py-1 bg-slate-100/80 rounded-full absolute right-2 top-[46%] z-10"
+        className={`px-2 py-1 bg-slate-100/80 rounded-full 
+        absolute right-2 top-[46%] z-10 transition-colors hover:bg-slate-100/100`}
         onClick={() => goToNextSlide()}
       >
         <ArrowForwardIosSharp fontSize="inherit" />

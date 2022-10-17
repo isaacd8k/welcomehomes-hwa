@@ -13,10 +13,10 @@ import carouselImg4 from "./../mock_data/img/carousel-4.jpeg";
 export default function Hero() {
   return (
     <MainSection className="">
-      <div className="grid grid-cols-8 gap-2">
-        <div className="col-span-3 flex flex-col justify-evenly space-y-6">
+      <div className="grid grid-cols-8 gap-4">
+        <div className="col-span-3 flex flex-col justify-center pr-5">
           <MainHeading>We make building a new home possible</MainHeading>
-          <p className="text-sm">
+          <p className="text-sm py-4">
             A new home is so much better than a used one. Welcome makes the
             process of building a home super-simple. We handle everything at a
             guaranteed, all-in-one price.
