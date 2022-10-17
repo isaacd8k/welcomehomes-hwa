@@ -39,7 +39,7 @@ export default function TabbedModelViewer({ models }: Props) {
 
   return (
     <div>
-      <div className="py-4 inline-flex whitespace-nowrap overflow-x-scroll">
+      <div className="py-4 flex whitespace-nowrap overflow-x-scroll">
         {models.map((model, idx) => (
           <button
             className={`text-sm px-3 pr-10 font-medium

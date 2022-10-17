@@ -46,7 +46,9 @@ export default function ModelDetail({ model, className }: Props) {
         </div>
 
         {/* Price */}
-        <div className="mb-3">{model.priceDescription}</div>
+        <div className="mb-3 text-center sm:text-left">
+          {model.priceDescription}
+        </div>
 
         {/* Buttons */}
         <ButtonGroup responsive>

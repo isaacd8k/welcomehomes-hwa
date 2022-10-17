@@ -16,7 +16,7 @@ export default function RoundedBtnLink({ children, className }: Props) {
       <span className="flex flex-col justify-center group-hover:text-blue-600 transition-colors">
         {children}
       </span>
-      <span className="ml-2 border border-blue-600 rounded-full px-1">
+      <span className="ml-2 text-lg sm:text-base sm:border border-blue-600 rounded-full h-6 w-6 overflow-hidden sm:pl-1">
         <ArrowFwd fontSize="inherit" htmlColor="rgb(37 99 235)" />
       </span>
     </button>
