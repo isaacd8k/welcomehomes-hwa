@@ -7,12 +7,14 @@ import MoreInfo from "./components/MoreInfo";
 
 function App() {
   return (
-    <div className="max-w-5xl mx-auto">
-      <Hero />
-      <StepByStep />
-      <Locations />
-      <OurModels />
-      <MoreInfo />
+    <div className="bg-black">
+      <div className="max-w-5xl mx-auto bg-white shadow-lg shadow-blue-500">
+        <Hero />
+        <StepByStep />
+        <Locations />
+        <OurModels />
+        <MoreInfo />
+      </div>
     </div>
   );
 }

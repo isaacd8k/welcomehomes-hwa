@@ -24,7 +24,9 @@ export const CarouselItem = ({
 };
 
 export default function Carousel({ children }: { children: React.ReactNode }) {
-  const [slideIndex, goToNextSlide, goToPrevSlide] = useInfiniteCarousel(4);
+  const numItems = React.Children.count(children);
+  const [slideIndex, goToNextSlide, goToPrevSlide] =
+    useInfiniteCarousel(numItems);
 
   return (
     <div className="overflow-hidden h-full relative">

@@ -6,5 +6,5 @@ type Props = {
 };
 
 export default function SecSubheading({ children, className }: Props) {
-  return <p className={`text-sm my-5 ${className}`}>{children}</p>;
+  return <p className={`text-sm my-5 font-light ${className}`}>{children}</p>;
 }

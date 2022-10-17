@@ -12,7 +12,12 @@ import {
 export default function StepByStep() {
   return (
     <MainSection className="bg-stone-800 text-slate-200 grid grid-rows-[1fr] gap-6">
-      <BoldHeadline className="text-slate-50">How it works</BoldHeadline>
+      <BoldHeadline
+        className="text-slate-50"
+        topBarClassName="before:bg-stone-600"
+      >
+        How it works
+      </BoldHeadline>
 
       <StepGroup>
         <Step

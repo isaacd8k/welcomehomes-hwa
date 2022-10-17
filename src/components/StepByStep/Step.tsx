@@ -13,7 +13,7 @@ export default function Step({ icon, title, desc }: Props) {
         <span className="bg-black rounded-full p-2">{icon}</span>
       </div>
       <header className="my-2 font-medium">{title}</header>
-      <p className="text-xs">{desc}</p>
+      <p className="text-sm font-light">{desc}</p>
     </div>
   );
 }
