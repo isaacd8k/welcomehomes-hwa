@@ -24,7 +24,7 @@ export default function Hero() {
             guaranteed, all-in-one price.
           </p>
 
-          <ButtonGroup className="flex-col justify-center sm:justify-start space-y-2 sm:space-y-0 sm:flex-row sm:space-x-2">
+          <ButtonGroup responsive>
             <Button main>Our models</Button>
             <Button>Explore towns</Button>
           </ButtonGroup>
